@@ -16,13 +16,13 @@ The web page with the specifications of the assignments is at:
 For reproducibility purposes (in case the web page in future will not
 be available), you can find:
 * in the folder "specs" : the content of the web page above specified
-* in the folder "data" : the input data for run_analysis.R
+* in the folder "data" : a .zip file with the input data for run_analysis.R
  
-In the folder "docs" I put several documentation I found on the
+In the folder "docs" a zip file with several documentation I found on the
 web about the arguments of this course (and general related to R): 
 feel free to grab it, if you're interested.
 
-# NOTES ABOUT run_analysis.R 
+# NOTES abour run_analysis.R 
 
 ##CONFIGURATION
 
