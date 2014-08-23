@@ -38,7 +38,7 @@ Also, to work on non-windows machines, I suppose that for the filepaths "\\" mus
 changed with "/".
 
 ## LOGIC
-This picture is woth than 1000 words...  (Thanks to David Hood!)   :-)
+This picture is worth than 1000 words...  (Thanks to David Hood!)   :-)
 ![alt text](https://coursera-forum-screenshots.s3.amazonaws.com/ab/a2776024af11e4a69d5576f8bc8459/Slide2.png )
 
 ##OPERATION
