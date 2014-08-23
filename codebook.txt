@@ -1,0 +1,102 @@
+The file tidy.txt is an ASCII file blank-delimited, having 82 columns.
+Each row contains 79 measures, related to a subject and an activity.
+There were 30 subjects, each of them doing 6 activities : so the file contains 
+30x6 = 180 observations.
+
+The first 3 columns are:
+01. SubjectID : ID of the Subject which did the activity
+02. ActivityID: ID of the activity
+03. Activity  : description of the activity
+
+The other 79 columns are the measures: they all were calculated as the mean of 
+the raw data, for each subject/activity/specific measure.
+The column names of the 79 measures follow: they are the same names than in the 
+original raw files, except the characters "()" are substituted with "_" 
+(in the list you can see, after the column number, the actual name in the tidy.txt
+file vs the original name in the raw files.
+
+04. tBodyAcc-mean_-X  -->  tBodyAcc-mean()-X
+05. tBodyAcc-mean_-Y  -->  tBodyAcc-mean()-Y
+06. tBodyAcc-mean_-Z  -->  tBodyAcc-mean()-Z
+07. tBodyAcc-std_-X  -->  tBodyAcc-std()-X
+08. tBodyAcc-std_-Y  -->  tBodyAcc-std()-Y
+09. tBodyAcc-std_-Z  -->  tBodyAcc-std()-Z
+10. tGravityAcc-mean_-X  -->  tGravityAcc-mean()-X
+11. tGravityAcc-mean_-Y  -->  tGravityAcc-mean()-Y
+12. tGravityAcc-mean_-Z  -->  tGravityAcc-mean()-Z
+13. tGravityAcc-std_-X  -->  tGravityAcc-std()-X
+14. tGravityAcc-std_-Y  -->  tGravityAcc-std()-Y
+15. tGravityAcc-std_-Z  -->  tGravityAcc-std()-Z
+16. tBodyAccJerk-mean_-X  -->  tBodyAccJerk-mean()-X
+17. tBodyAccJerk-mean_-Y  -->  tBodyAccJerk-mean()-Y
+18. tBodyAccJerk-mean_-Z  -->  tBodyAccJerk-mean()-Z
+19. tBodyAccJerk-std_-X  -->  tBodyAccJerk-std()-X
+20. tBodyAccJerk-std_-Y  -->  tBodyAccJerk-std()-Y
+21. tBodyAccJerk-std_-Z  -->  tBodyAccJerk-std()-Z
+22. tBodyGyro-mean_-X  -->  tBodyGyro-mean()-X
+23. tBodyGyro-mean_-Y  -->  tBodyGyro-mean()-Y
+24. tBodyGyro-mean_-Z  -->  tBodyGyro-mean()-Z
+25. tBodyGyro-std_-X  -->  tBodyGyro-std()-X
+26. tBodyGyro-std_-Y  -->  tBodyGyro-std()-Y
+27. tBodyGyro-std_-Z  -->  tBodyGyro-std()-Z
+28. tBodyGyroJerk-mean_-X  -->  tBodyGyroJerk-mean()-X
+29. tBodyGyroJerk-mean_-Y  -->  tBodyGyroJerk-mean()-Y
+30. tBodyGyroJerk-mean_-Z  -->  tBodyGyroJerk-mean()-Z
+31. tBodyGyroJerk-std_-X  -->  tBodyGyroJerk-std()-X
+32. tBodyGyroJerk-std_-Y  -->  tBodyGyroJerk-std()-Y
+33. tBodyGyroJerk-std_-Z  -->  tBodyGyroJerk-std()-Z
+34. tBodyAccMag-mean_  -->  tBodyAccMag-mean()
+35. tBodyAccMag-std_  -->  tBodyAccMag-std()
+36. tGravityAccMag-mean_  -->  tGravityAccMag-mean()
+37. tGravityAccMag-std_  -->  tGravityAccMag-std()
+38. tBodyAccJerkMag-mean_  -->  tBodyAccJerkMag-mean()
+39. tBodyAccJerkMag-std_  -->  tBodyAccJerkMag-std()
+40. tBodyGyroMag-mean_  -->  tBodyGyroMag-mean()
+41. tBodyGyroMag-std_  -->  tBodyGyroMag-std()
+42. tBodyGyroJerkMag-mean_  -->  tBodyGyroJerkMag-mean()
+43. tBodyGyroJerkMag-std_  -->  tBodyGyroJerkMag-std()
+44. fBodyAcc-mean_-X  -->  fBodyAcc-mean()-X
+45. fBodyAcc-mean_-Y  -->  fBodyAcc-mean()-Y
+46. fBodyAcc-mean_-Z  -->  fBodyAcc-mean()-Z
+47. fBodyAcc-std_-X  -->  fBodyAcc-std()-X
+48. fBodyAcc-std_-Y  -->  fBodyAcc-std()-Y
+49. fBodyAcc-std_-Z  -->  fBodyAcc-std()-Z
+50. fBodyAcc-meanFreq_-X  -->  fBodyAcc-meanFreq()-X0
+51. fBodyAcc-meanFreq_-Y  -->  fBodyAcc-meanFreq()-Y
+52. fBodyAcc-meanFreq_-Z  -->  fBodyAcc-meanFreq()-Z
+53. fBodyAccJerk-mean_-X  -->  fBodyAccJerk-mean()-X
+54. fBodyAccJerk-mean_-Y  -->  fBodyAccJerk-mean()-Y
+55. fBodyAccJerk-mean_-Z  -->  fBodyAccJerk-mean()-Z
+56. fBodyAccJerk-std_-X  -->  fBodyAccJerk-std()-X
+57. fBodyAccJerk-std_-Y  -->  fBodyAccJerk-std()-Y
+58. fBodyAccJerk-std_-Z  -->  fBodyAccJerk-std()-Z
+59. fBodyAccJerk-meanFreq_-X  -->  fBodyAccJerk-meanFreq()-X
+60. fBodyAccJerk-meanFreq_-Y  -->  fBodyAccJerk-meanFreq()-Y
+61. fBodyAccJerk-meanFreq_-Z  -->  fBodyAccJerk-meanFreq()-Z
+62. fBodyGyro-mean_-X  -->  fBodyGyro-mean()-X
+63. fBodyGyro-mean_-Y  -->  fBodyGyro-mean()-Y
+64. fBodyGyro-mean_-Z  -->  fBodyGyro-mean()-Z
+65. fBodyGyro-std_-X  -->  fBodyGyro-std()-X
+66. fBodyGyro-std_-Y  -->  fBodyGyro-std()-Y
+67. fBodyGyro-std_-Z  -->  fBodyGyro-std()-Z
+68. fBodyGyro-meanFreq_-X  -->  fBodyGyro-meanFreq()-X
+69. fBodyGyro-meanFreq_-Y  -->  fBodyGyro-meanFreq()-Y
+70. fBodyGyro-meanFreq_-Z  -->  fBodyGyro-meanFreq()-Z
+71. fBodyAccMag-mean_  -->  fBodyAccMag-mean()
+72. fBodyAccMag-std_  -->  fBodyAccMag-std()
+73. fBodyAccMag-meanFreq_  -->  fBodyAccMag-meanFreq()
+74. fBodyBodyAccJerkMag-mean_  -->  fBodyBodyAccJerkMag-mean()
+75. fBodyBodyAccJerkMag-std_  -->  fBodyBodyAccJerkMag-std()
+76. fBodyBodyAccJerkMag-meanFreq_  -->  fBodyBodyAccJerkMag-meanFreq()
+77. fBodyBodyGyroMag-mean_  -->  fBodyBodyGyroMag-mean()
+78. fBodyBodyGyroMag-std_  -->  fBodyBodyGyroMag-std()
+79. fBodyBodyGyroMag-meanFreq_  -->  fBodyBodyGyroMag-meanFreq()
+80. fBodyBodyGyroJerkMag-mean_  -->  fBodyBodyGyroJerkMag-mean()
+81. fBodyBodyGyroJerkMag-std_  -->  fBodyBodyGyroJerkMag-std()
+82. fBodyBodyGyroJerkMag-meanFreq_  -->  fBodyBodyGyroJerkMag-meanFreq()
+
+The raw files contains more columns, but the computation is made only for
+column names containing "mean" or "std".
+For further explanations about the meaning of the measures, please refer to the
+files feature.txt and features_info.txt, which were enclosed with the raw files
+and are present in this repo too.
